@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo ">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/admin/dashboard.html" target="_blank">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="about" class="section profile1">
+    <div class="container">
+      <img src="assets/img/avatar.jpg" alt="Profile Picture" class="avatar" />
+      <h1 id="profile-name">Loading...</h1>
+      <p id="profile-bio">Loading bio...</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section project1">
+    <div class="container">
+      <h2>Projects</h2>
+      <div id="projects-container" class="cards"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills1">
+    <div class="container">
+      <h2>Skills</h2>
+      <div id="skills-container" class="skills"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section cnt">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="form-status"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
