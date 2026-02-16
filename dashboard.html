@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio Dashboard</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 250px;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav a {
+      padding: 12px 20px;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #ecf0f1;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .nav a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main content styles */
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .header {
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      color: #2c3e50;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #34495e;
+      border-bottom: 2px solid #bdc3c7;
+      padding-bottom: 5px;
+    }
+
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    /* Projects list */
+    .projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project {
+      background-color: #ffffff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Contact info */
+    .contact-info {
+      list-style: none;
+    }
+
+    .contact-info li {
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      margin-top: 40px;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 768px){
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h2>My Portfolio</h2>
+    <nav class="nav">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Header -->
+    <header class="header" id="about">
+      <h1>Hello, I'm Rita</h1>
+      <p>Welcome to my personal portfolio website. Explore my skills, projects, and get in touch!</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+       My name is Rita, I am 20 years old and I live in Janakpuri New Delhi with my
+parents and.
+I have completed my graduation in BBA from Chandigarh University.
+I like to read newspaper & watching movies that is my hobbies.
+My goal is to work in a reputed organisation which can enhance my skills.
+That's all about me sir.
+Thank you for giving me an opportunity to introduce myself.
+
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML</h3>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill">
+          <h3>React</h3>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+        </div>
+        <div class="skill">
+          <h3>Django</h3>
+        </div>
+        <!-- Add more skills as needed -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project Title 1</h3>
+          <p>Personal Portfolio Website</p>
+        </div>
+        <div class="project">
+          <h3>Project Title 2</h3>
+          <p>Student Management System</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul class="contact-info">
+        <li>Email: rita@gmail.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/rita</a></li>
+        <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/rita</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Developer. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
